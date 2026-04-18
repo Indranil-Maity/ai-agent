@@ -14,4 +14,4 @@ wheels/
 .python-version
 pyproject.toml
 uv.lock
-
+test_*

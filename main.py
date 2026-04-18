@@ -33,7 +33,7 @@ def main():
         print("ERROR: No response received from API", file=sys.stderr)
         sys.exit(1)
     if res.usage_metadata and args.verbose:
-        print(f"User prompt: {args.user_prompt}")
+        print(f"User prompt: {prompt_text}")
         print(f"Prompt tokens: {res.usage_metadata.prompt_token_count}")
         print(f"Response tokens: {res.usage_metadata.candidates_token_count}")
     print("Response: ")
